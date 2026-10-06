@@ -1,0 +1,19 @@
+[submodule "products/open-source/webdog"]
+	path = products/open-source/webdog
+	url = https://github.com/context-dot-dev/webdog.git
+
+[submodule "products/open-source/excalidraw"]
+	path = products/open-source/excalidraw
+	url = https://github.com/excalidraw/excalidraw.git
+
+[submodule "products/open-source/memos"]
+	path = products/open-source/memos
+	url = https://github.com/usememos/memos.git
+
+[submodule "products/open-source/umami"]
+	path = products/open-source/umami
+	url = https://github.com/umami-software/umami.git
+
+[submodule "products/open-source/grist-core"]
+	path = products/open-source/grist-core
+	url = https://github.com/gristlabs/grist-core.git
