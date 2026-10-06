@@ -1,41 +1,23 @@
-# Data Repair Receipt
+# Data Repair Receipt — v0.1.0
 
-**Portfolio status:** HYPOTHESIS  
-**Investment stage:** Micro-pilot  
-**Decision:** OPEN
+**Status:** EXPERIMENTALLY_SUPPORTED (implementation only)
 
-## Product thesis
+A deterministic repair utility that makes approved data changes and emits cryptographic before/after evidence.
 
-_To be written before implementation._
+Current repair:
+- trim surrounding whitespace in explicitly selected string fields
 
-## Buyer
+Receipt:
+- changed cell count
+- before SHA-256
+- after SHA-256
+- repaired rows
 
-Who has the pain and who pays?
+Validation:
+- local test suite: 4/4 passed
 
-## Pain
+The input is not mutated in memory.
 
-What costly or repeated failure are we targeting?
+This is deliberately narrow. Future repair rules must each have their own tests and explicit approval semantics.
 
-## Minimal input
-
-What is the smallest real artifact/event the pilot accepts?
-
-## Valuable output
-
-What concrete artifact/state change does the user receive?
-
-## Distribution
-
-First intended acquisition channel:
-
-## Payment
-
-Initial buying unit:
-
-## Kill test
-
-What evidence will make us stop?
-
-## Evidence
-
-No validated evidence recorded yet.
+Commercial validation remains OPEN.
