@@ -1,38 +1,72 @@
-# Portfolio Status v0.4
+# Portfolio Status v0.5
 
 **Date:** 2026-10-06
 
 ## Operating decision
 
-We are building a **multi-product, multi-channel catalog**.
+We are building a multi-product, multi-channel catalog.
 
-The portfolio is source-agnostic:
+Source models:
 - BUILD
 - BUY / RESELL
 - WHITE-LABEL / LICENSE
 - BUNDLE / COMPOSE
-
-The product source is a business choice, not an ideology.
+- OPEN-SOURCE DOWNSTREAM
 
 ## Current portfolio
 
-| # | Product | Domain | Source | Status |
-|---|---|---|---|---|
-| 01 | Submission Preflight | Procurement / Documents | BUILD | EXPERIMENTALLY_SUPPORTED implementation |
-| 02 | Invoice Mismatch Scanner | Finance / Commerce | BUILD / BUNDLE | EXPERIMENTALLY_SUPPORTED implementation |
-| 03 | Data Repair Receipt | Data / Ops | BUILD | EXPERIMENTALLY_SUPPORTED implementation |
-| 04 | Web Action Receipt | Browser / Ops | BUILD / BUNDLE | HYPOTHESIS |
-| 05 | Agent Acceptance Test | AI / Developer | BUILD | RESEARCH PROTOTYPE CANDIDATE |
-| 06 | Document Consistency Checker | Documents | BUILD | HYPOTHESIS |
-| 07 | Digital License Manager | Digital Commerce | BUILD / WHITE-LABEL | HYPOTHESIS |
-| 08 | Procurement Pack Builder | Procurement | BUILD / BUNDLE | HYPOTHESIS |
-| 09 | AI Output Validator | AI / Operations | BUILD / BUNDLE | HYPOTHESIS |
-| 10 | Marketplace Listing Preflight | E-commerce | BUILD / BUNDLE | NEW HYPOTHESIS |
-| 11 | Website Change Sentinel | Web / Intelligence | BUILD | NEW HYPOTHESIS |
-| 12 | Research Evidence Pack | Research / Consulting | BUILD / BUNDLE | NEW HYPOTHESIS |
-| 13 | SOP Drift Detector | Operations / Knowledge | BUILD / BUNDLE | NEW HYPOTHESIS |
-| 14 | Vendor Renewal Reconciler | Finance / Procurement | BUILD / BUNDLE | NEW HYPOTHESIS |
-| 15 | Accessibility Preflight | Web / Quality | BUILD / BUNDLE | NEW HYPOTHESIS |
+01 Submission Preflight — EXPERIMENTALLY_SUPPORTED implementation
+02 Invoice Mismatch Scanner — EXPERIMENTALLY_SUPPORTED implementation
+03 Data Repair Receipt — EXPERIMENTALLY_SUPPORTED implementation
+04 Web Action Receipt — HYPOTHESIS
+05 Agent Acceptance Test — RESEARCH PROTOTYPE CANDIDATE
+06 Document Consistency Checker — HYPOTHESIS
+07 Digital License Manager — HYPOTHESIS
+08 Procurement Pack Builder — HYPOTHESIS
+09 AI Output Validator — HYPOTHESIS
+10 Marketplace Listing Preflight — HYPOTHESIS
+11 Website Change Sentinel — HYPOTHESIS
+12 Research Evidence Pack — HYPOTHESIS
+13 SOP Drift Detector — HYPOTHESIS
+14 Vendor Renewal Reconciler — HYPOTHESIS
+15 Accessibility Preflight — HYPOTHESIS
+
+## Open-source downstream products
+
+16 Web Signal Intelligence
+- upstream: context-dot-dev/webdog
+- license: MIT
+- pinned commit: 426158f543fbaf591f7248f1be62ebfa8b4d695c
+- status: EXPERIMENTALLY_SUPPORTED overlay
+- our wedge: change-significance classification
+
+17 Evidence Canvas
+- upstream: excalidraw/excalidraw
+- license: MIT
+- pinned commit: ed10ac7dca7e40f3f4a31269b4bfba980d0db41e
+- status: HYPOTHESIS / productized template layer
+- our wedge: evidence/decision canvas workflows
+
+18 Private Knowledge Stream
+- upstream: usememos/memos
+- license: MIT
+- pinned commit: f7a61867315ff7d3b2cd7347adfc161f32022227
+- status: EXPERIMENTALLY_SUPPORTED overlay
+- our wedge: structured decision/evidence timeline
+
+19 Privacy Analytics Studio
+- upstream: umami-software/umami
+- license: MIT
+- pinned commit: ec0ff50388c264ed8ce46f00967e92f7e71476ae
+- status: HYPOTHESIS / productized report layer
+- our wedge: packaged privacy-first reporting
+
+20 Operations Grid
+- upstream: gristlabs/grist-core
+- license: Apache-2.0
+- pinned commit: 3bc6578b06efe1e22c9cd3648f5311059e07739e
+- status: EXPERIMENTALLY_SUPPORTED overlay
+- our wedge: validated SMB operational templates
 
 ## Commercial-source pilots
 
@@ -46,29 +80,23 @@ Candidate platform: HighLevel
 Model: WHITE-LABEL / LICENSE
 Status: CANDIDATE — account economics, niche and acquisition OPEN
 
-## Strengthening strategy
+## Open-source compliance rule
 
-Each product should gain at least one non-generic advantage:
-- deterministic correctness
-- evidence/provenance
-- domain-specific rule packs
-- workflow compression
-- proprietary benchmark data
-- stronger distribution access
-- lower support burden
-- better unit economics
-- API/integration leverage
-- reusable licensing/entitlement model
+Every downstream product must:
+1. pin an upstream commit
+2. preserve upstream license and attribution
+3. mark our modifications
+4. avoid upstream trademark/branding unless separately authorized
+5. avoid implying endorsement
+6. verify third-party dependency licenses before commercial distribution
 
 ## Execution rule
 
 Do not return to broad market research as the default.
 
-We now have enough hypotheses.
-
-Next:
-1. finish strengthening the 15 product cards
-2. choose a balanced launch batch
-3. build only the smallest sellable core for each selected product
-4. launch through multiple channels where practical
-5. use payment, repeat usage and support burden as primary evidence
+The next work:
+1. strengthen the acquired products with product-specific overlays
+2. add CI for downstream overlays
+3. choose launch batches across different source models
+4. test real distribution and payment
+5. keep provenance and negative evidence
