@@ -237,3 +237,20 @@ Reason:
 Do not create a new shared platform for the compounds.
 
 Implement the smallest end-to-end path for one compound, execute it on real inputs, record evidence, and only then extract reusable contracts or libraries.
+
+
+## New compound opportunities — 2026-10-06
+
+| Rank | Compound | Components | Buyer | Why the combination matters | Status |
+|---|---|---|---|---|---|
+| 11 | SMB Finance Control Room | Financial Exception Desk + Operations App Packs + Privacy Analytics Studio | SMB finance/ops | exception queue + operator UI + aggregate reporting | INFERENCE |
+| 12 | Agent Execution Assurance | Browser Action Gate + Agent Acceptance Test + AI Output Validator + Web Action Receipt | agent builders | links action execution to postcondition acceptance and proof | INFERENCE |
+| 13 | Service & Change Intelligence | Reliability Evidence Monitor + Web Change Intelligence + Private Knowledge Stream | agencies / SaaS operators | joins service health, external changes and durable operational context | INFERENCE |
+| 14 | ERP Migration Assurance | ERP Verification Pack + Financial Exception Desk + Data Repair Receipt | ERP implementers | validates imported commercial data and preserves repair proof | INFERENCE |
+| 15 | Operational Decision Workspace | Operations App Packs + Evidence Canvas + Private Knowledge Stream | SMB teams / consultants | turns operational records into evidence-backed decisions | INFERENCE |
+
+### Portfolio-composition rule
+
+A new compound should reuse at least two independent product outputs before any shared platform code is introduced.
+
+The compound itself is a SKU hypothesis, not permission to merge the underlying products.
