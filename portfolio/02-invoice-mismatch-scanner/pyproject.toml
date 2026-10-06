@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "invoice-mismatch-scanner"
+version = "0.1.0"
+description = "Deterministic order-to-invoice mismatch scanner"
+requires-python = ">=3.11"
+
+[project.scripts]
+invoice-mismatch-scanner = "invoice_mismatch_scanner.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]
