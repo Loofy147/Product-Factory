@@ -17,3 +17,24 @@
 [submodule "products/open-source/grist-core"]
 	path = products/open-source/grist-core
 	url = https://github.com/gristlabs/grist-core.git
+
+[submodule "products/open-source/appsmith"]
+	path = products/open-source/appsmith
+	url = https://github.com/appsmithorg/appsmith.git
+
+[submodule "products/open-source/agent-browser"]
+	path = products/open-source/agent-browser
+	url = https://github.com/vercel-labs/agent-browser.git
+
+[submodule "products/open-source/gatus"]
+	path = products/open-source/gatus
+	url = https://github.com/TwiN/gatus.git
+
+[submodule "products/open-source/uptime-kuma"]
+	path = products/open-source/uptime-kuma
+	url = https://github.com/louislam/uptime-kuma.git
+
+[submodule "products/open-source/lambda-erp"]
+	path = products/open-source/lambda-erp
+	url = https://github.com/lambdadevelopment/lambda-erp.git
+
