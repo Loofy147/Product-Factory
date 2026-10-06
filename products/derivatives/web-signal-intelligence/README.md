@@ -13,6 +13,7 @@ The first implementation is intentionally deterministic. It can later be connect
 ## Validation
 
 3/3 local tests passed.
+GitHub Actions overlay workflow is enabled for downstream regression testing.
 
 ## Commercial wedge
 
