@@ -1,14 +1,15 @@
-# Product Catalog v0.2
+# Product Catalog v0.3
 
 ## Portfolio design
 
-We are deliberately building **many products × many channels × multiple source models**.
+We are building **many products × many channels × multiple source models**.
 
 Source models:
 - BUILD
 - BUY / RESELL
 - WHITE-LABEL / LICENSE
 - BUNDLE / COMPOSE
+- OPEN-SOURCE DOWNSTREAM
 
 The objective is portfolio-level revenue, learning rate, margin, distribution resilience and option value.
 
@@ -31,6 +32,19 @@ The objective is portfolio-level revenue, learning rate, margin, distribution re
 | 13 | SOP Drift Detector | Operations / Knowledge | BUILD / BUNDLE | Process teams | Browser + B2B | detect procedure drift |
 | 14 | Vendor Renewal Reconciler | Finance / Procurement | BUILD / BUNDLE | SMB finance / procurement | Direct B2B | expected-vs-observed commercial exceptions |
 | 15 | Accessibility Preflight | Web / Quality | BUILD / BUNDLE | Agencies / web teams | Extension / CI | pre-release gating with evidence |
+| 16 | Web Signal Intelligence | Web / Monitoring | OPEN-SOURCE DOWNSTREAM | Operators / agencies | SaaS / API | classify meaningful change vs noise |
+| 17 | Evidence Canvas | Research / Decisions | OPEN-SOURCE DOWNSTREAM | Teams / consultants | Direct / marketplace | opinionated evidence/decision diagrams |
+| 18 | Private Knowledge Stream | Research / Knowledge | OPEN-SOURCE DOWNSTREAM | Researchers / engineering teams | Direct / extension | structured decision/evidence timeline |
+| 19 | Privacy Analytics Studio | Analytics | OPEN-SOURCE DOWNSTREAM | Agencies / SMBs | Direct / self-hosted | packaged privacy-first reporting |
+| 20 | Operations Grid | Operations / Data | OPEN-SOURCE DOWNSTREAM | SMB ops teams | Direct / templates | validated operational spreadsheet workflows |
+
+## Open-source downstream bases
+
+Pinned, reproducible upstream bases are recorded in:
+`products/open-source/ACQUISITION_LEDGER.md`
+
+Upstream code is not represented as original authorship by Product Factory.
+Our product layer is the packaging, workflows, templates, rules, adapters and other modifications we add.
 
 ## Portfolio balancing
 
@@ -38,7 +52,7 @@ The objective is portfolio-level revenue, learning rate, margin, distribution re
 03, 06, 10, 11
 
 ### SMB operations
-02, 13, 14
+02, 13, 14, 20
 
 ### B2B / procurement
 01, 08, 15
@@ -47,7 +61,10 @@ The objective is portfolio-level revenue, learning rate, margin, distribution re
 05, 07, 09
 
 ### Research / knowledge
-12
+12, 17, 18
+
+### Privacy / analytics
+19
 
 ### Browser-native distribution
 04, 10, 11, 12, 13, 15
