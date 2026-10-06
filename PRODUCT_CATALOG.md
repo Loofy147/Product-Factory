@@ -95,3 +95,19 @@ For each promising product, improve one or more of:
 - lower support burden
 - superior unit economics
 - proprietary benchmark/data
+
+
+## Compound product layer
+
+The portfolio now permits **compound products**: narrow workflows that chain independent products through explicit artifacts/state contracts.
+
+See `products/COMPOUND_PRODUCT_CATALOG.md`.
+
+Current priority compounds:
+1. Bid Evidence Factory
+2. Web Change Intelligence
+3. Financial Exception Desk
+4. Research Decision Pack
+5. Agent Release Gate
+
+Compound status remains **INFERENCE** until end-to-end execution on real inputs is observed.
