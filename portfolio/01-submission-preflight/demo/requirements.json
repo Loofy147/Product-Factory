@@ -1,0 +1,5 @@
+[
+  {"id":"REQ-001","title":"Bid form","required":true,"filename":"01_bid_form.pdf","type":"pdf"},
+  {"id":"REQ-002","title":"Technical annex","required":true,"filename":"10_technical_annex.pdf","type":"pdf"},
+  {"id":"REQ-003","title":"Optional brochure","required":false,"filename":"brochure.pdf","type":"pdf"}
+]
