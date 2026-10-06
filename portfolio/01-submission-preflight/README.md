@@ -1,5 +1,7 @@
 # Submission Preflight — v0.1.0
 
+**Status:** EXPERIMENTALLY_SUPPORTED (implementation only)
+
 A deterministic preflight engine for checking whether a submission evidence directory satisfies explicit requirements.
 
 ## Current scope
@@ -29,6 +31,12 @@ PYTHONPATH=src python -m submission_preflight.cli requirements.json ./evidence -
 Exit code:
 - 0 = no blocking failures
 - 2 = one or more blocking failures
+
+## Validation
+
+- 5/5 local tests passed
+- CLI smoke test passed
+- commercial value remains OPEN
 
 ## Deliberate boundary
 
