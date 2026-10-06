@@ -1,10 +1,10 @@
-# Portfolio Status v0.3
+# Portfolio Status v0.4
 
 **Date:** 2026-10-06
 
 ## Operating decision
 
-We are running a portfolio of product experiments rather than searching indefinitely for one perfect idea.
+We are building a **multi-product, multi-channel catalog**.
 
 The portfolio is source-agnostic:
 - BUILD
@@ -12,58 +12,63 @@ The portfolio is source-agnostic:
 - WHITE-LABEL / LICENSE
 - BUNDLE / COMPOSE
 
-## Current candidates
+The product source is a business choice, not an ideology.
 
-| # | Product | Source model | Status | Next action |
+## Current portfolio
+
+| # | Product | Domain | Source | Status |
 |---|---|---|---|---|
-| 01 | Submission Preflight | BUILD | EXPERIMENTALLY_SUPPORTED (implementation) | real submission benchmark |
-| 02 | Invoice Mismatch Scanner | BUILD / BUNDLE | EXPERIMENTALLY_SUPPORTED (implementation) | real invoice/order benchmark |
-| 03 | Data Repair Receipt | BUILD | EXPERIMENTALLY_SUPPORTED (implementation) | real dataset benchmark |
-| 04 | Web Action Receipt | BUILD / BUNDLE | HYPOTHESIS | micro-pilot design |
-| 05 | Agent Acceptance Test | BUILD | RESEARCH PROTOTYPE CANDIDATE | discriminating prototype |
-| 06 | Document Consistency Checker | BUILD | HYPOTHESIS | micro-pilot design |
-| 07 | Digital License Manager | BUILD / WHITE-LABEL | HYPOTHESIS | micro-pilot design |
-| 08 | Procurement Pack Builder | BUILD / BUNDLE | HYPOTHESIS | micro-pilot design |
-| 09 | AI Output Validator | BUILD / BUNDLE | HYPOTHESIS | micro-pilot design |
+| 01 | Submission Preflight | Procurement / Documents | BUILD | EXPERIMENTALLY_SUPPORTED implementation |
+| 02 | Invoice Mismatch Scanner | Finance / Commerce | BUILD / BUNDLE | EXPERIMENTALLY_SUPPORTED implementation |
+| 03 | Data Repair Receipt | Data / Ops | BUILD | EXPERIMENTALLY_SUPPORTED implementation |
+| 04 | Web Action Receipt | Browser / Ops | BUILD / BUNDLE | HYPOTHESIS |
+| 05 | Agent Acceptance Test | AI / Developer | BUILD | RESEARCH PROTOTYPE CANDIDATE |
+| 06 | Document Consistency Checker | Documents | BUILD | HYPOTHESIS |
+| 07 | Digital License Manager | Digital Commerce | BUILD / WHITE-LABEL | HYPOTHESIS |
+| 08 | Procurement Pack Builder | Procurement | BUILD / BUNDLE | HYPOTHESIS |
+| 09 | AI Output Validator | AI / Operations | BUILD / BUNDLE | HYPOTHESIS |
+| 10 | Marketplace Listing Preflight | E-commerce | BUILD / BUNDLE | NEW HYPOTHESIS |
+| 11 | Website Change Sentinel | Web / Intelligence | BUILD | NEW HYPOTHESIS |
+| 12 | Research Evidence Pack | Research / Consulting | BUILD / BUNDLE | NEW HYPOTHESIS |
+| 13 | SOP Drift Detector | Operations / Knowledge | BUILD / BUNDLE | NEW HYPOTHESIS |
+| 14 | Vendor Renewal Reconciler | Finance / Procurement | BUILD / BUNDLE | NEW HYPOTHESIS |
+| 15 | Accessibility Preflight | Web / Quality | BUILD / BUNDLE | NEW HYPOTHESIS |
 
-## Commercial pilots
+## Commercial-source pilots
 
-### B — Travel eSIM Resale
+### Travel eSIM Resale
 Candidate supplier: Airalo Partners
 Model: BUY / RESELL
-Status: CANDIDATE — onboarding and unit economics OPEN
+Status: CANDIDATE — onboarding, rights and unit economics OPEN
 
-### C — Service Business OS
+### Service Business OS
 Candidate platform: HighLevel
 Model: WHITE-LABEL / LICENSE
-Status: CANDIDATE — account economics and niche selection OPEN
+Status: CANDIDATE — account economics, niche and acquisition OPEN
 
-## New portfolio objective
+## Strengthening strategy
 
-Build a multi-product, multi-channel catalog.
-
-A product can be:
-- entirely built in-house
-- sourced for resale
-- licensed / white-labeled
-- bundled / composed
-
-The key metrics are:
-- demand
-- margin
-- channel count
-- repeatability
-- support burden
-- legal/contractual viability
-- resilience to any single platform
+Each product should gain at least one non-generic advantage:
+- deterministic correctness
+- evidence/provenance
+- domain-specific rule packs
+- workflow compression
+- proprietary benchmark data
+- stronger distribution access
+- lower support burden
+- better unit economics
+- API/integration leverage
+- reusable licensing/entitlement model
 
 ## Execution rule
 
-Broad market research is no longer the default.
+Do not return to broad market research as the default.
 
-The next work is:
-1. validate the three built pilots on real datasets
-2. acquire commercial facts for the Airalo resale pilot
-3. choose one HighLevel vertical offer and validate its economics
-4. launch at least one real distribution surface
-5. record payment and repeat-use evidence
+We now have enough hypotheses.
+
+Next:
+1. finish strengthening the 15 product cards
+2. choose a balanced launch batch
+3. build only the smallest sellable core for each selected product
+4. launch through multiple channels where practical
+5. use payment, repeat usage and support burden as primary evidence
