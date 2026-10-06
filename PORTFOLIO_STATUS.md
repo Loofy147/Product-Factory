@@ -100,3 +100,19 @@ The next work:
 3. choose launch batches across different source models
 4. test real distribution and payment
 5. keep provenance and negative evidence
+
+
+## Compound frontier
+
+Added `products/COMPOUND_PRODUCT_CATALOG.md`.
+
+The current execution frontier is not "add more products". It is to validate whether several existing products create materially stronger buyer outcomes when composed at explicit artifact/state boundaries.
+
+Priority compounds:
+- Bid Evidence Factory
+- Web Change Intelligence
+- Financial Exception Desk
+- Research Decision Pack
+- Agent Release Gate
+
+No new shared platform is authorized merely to support these compounds.
