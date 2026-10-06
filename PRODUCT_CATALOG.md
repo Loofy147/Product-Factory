@@ -111,3 +111,25 @@ Current priority compounds:
 5. Agent Release Gate
 
 Compound status remains **INFERENCE** for commercial value. Financial Exception Desk implementation is now **EXPERIMENTALLY_SUPPORTED** at the component-test level; real-world value remains OPEN.
+
+
+## Products 21–24 — 2026-10-06
+
+| # | Product | Domain | Source | Primary buyer | Initial channel | Status |
+|---|---|---|---|---|---|---|
+| 21 | Financial Exception Desk | Finance / Operations | BUILD / COMPOSE | SMB finance ops | Direct / agencies | EXPERIMENTALLY_SUPPORTED implementation |
+| 22 | Operations App Packs | Internal tools / SMB ops | OPEN-SOURCE DOWNSTREAM | SMB operators / agencies | Templates / direct | HYPOTHESIS |
+| 23 | Browser Action Gate | Browser / AI | OPEN-SOURCE DOWNSTREAM | Agent builders / QA | CLI / API / CI | HYPOTHESIS |
+| 24 | Reliability Evidence Monitor | DevOps / SaaS operations | OPEN-SOURCE DOWNSTREAM | Agencies / SaaS operators | Managed / self-hosted | EXPERIMENTALLY_SUPPORTED overlay core; value OPEN |
+| 25 | ERP Verification Pack | ERP / Finance | OPEN-SOURCE DOWNSTREAM | ERP partners / finance teams | B2B / implementation | HYPOTHESIS |
+
+## New source-model balance
+
+The catalog now contains:
+- BUILD
+- BUILD / COMPOSE
+- OPEN-SOURCE DOWNSTREAM
+- BUY / RESELL
+- WHITE-LABEL / LICENSE
+
+The objective remains portfolio optionality, not maximum technical breadth.
