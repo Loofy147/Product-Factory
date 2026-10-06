@@ -124,7 +124,7 @@ No new shared platform is authorized merely to support these compounds.
 21 Financial Exception Desk — EXPERIMENTALLY_SUPPORTED implementation / commercial value OPEN
 22 Operations App Packs — HYPOTHESIS
 23 Browser Action Gate — HYPOTHESIS
-24 Reliability Evidence Monitor — EXPERIMENTALLY_SUPPORTED overlay core / commercial value OPEN
+24 Reliability Evidence Monitor — EXPERIMENTALLY_SUPPORTED deterministic overlay / commercial value OPEN
 25 ERP Verification Pack — HYPOTHESIS
 
 Five additional OSS bases are pinned:
