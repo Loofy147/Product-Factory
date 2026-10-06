@@ -1,41 +1,42 @@
-# Submission Preflight
+# Submission Preflight — v0.1.0
 
-**Portfolio status:** HYPOTHESIS  
-**Investment stage:** Micro-pilot  
-**Decision:** OPEN
+A deterministic preflight engine for checking whether a submission evidence directory satisfies explicit requirements.
 
-## Product thesis
+## Current scope
 
-_To be written before implementation._
+Input:
+- requirements JSON
+- evidence directory
 
-## Buyer
+Checks:
+- required file exists
+- optional evidence remains UNKNOWN when absent
+- expected file type matches
+- evidence path cannot escape the evidence directory
+- evidence is hashed into a SHA-256 manifest
 
-Who has the pain and who pays?
+Outputs:
+- PASS / FAIL / UNKNOWN summary
+- per-requirement findings
+- evidence manifest
 
-## Pain
+Run:
 
-What costly or repeated failure are we targeting?
+```bash
+PYTHONPATH=src python -m submission_preflight.cli requirements.json ./evidence --output report.json
+```
 
-## Minimal input
+Exit code:
+- 0 = no blocking failures
+- 2 = one or more blocking failures
 
-What is the smallest real artifact/event the pilot accepts?
+## Deliberate boundary
 
-## Valuable output
+v0.1 does not infer semantic compliance. It never converts uncertainty into PASS.
 
-What concrete artifact/state change does the user receive?
-
-## Distribution
-
-First intended acquisition channel:
-
-## Payment
-
-Initial buying unit:
-
-## Kill test
-
-What evidence will make us stop?
-
-## Evidence
-
-No validated evidence recorded yet.
+Next experimental layers:
+1. deterministic metadata checks
+2. dates / expiry
+3. naming / size constraints
+4. semantic evidence checks with explicit UNKNOWN handling
+5. real document/PDF fixtures
