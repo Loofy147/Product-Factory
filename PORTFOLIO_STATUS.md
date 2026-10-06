@@ -1,4 +1,4 @@
-# Portfolio Status v0.2
+# Portfolio Status v0.3
 
 **Date:** 2026-10-06
 
@@ -16,21 +16,37 @@ The portfolio is source-agnostic:
 
 | # | Product | Source model | Status | Next action |
 |---|---|---|---|---|
-| 01 | Submission Preflight | BUILD | BUILD CANDIDATE | define micro-pilot and benchmark |
-| 02 | Invoice Mismatch Scanner | BUILD / BUNDLE | HYPOTHESIS | define micro-pilot |
-| 03 | Data Repair Receipt | BUILD | HYPOTHESIS | define micro-pilot |
-| 04 | Web Action Receipt | BUILD / BUNDLE | HYPOTHESIS | define micro-pilot |
-| 05 | Agent Acceptance Test | BUILD | RESEARCH PROTOTYPE CANDIDATE | define discriminating prototype |
-| 06 | Document Consistency Checker | BUILD | HYPOTHESIS | define micro-pilot |
-| 07 | Digital License Manager | BUILD / WHITE-LABEL | HYPOTHESIS | define micro-pilot |
-| 08 | Procurement Pack Builder | BUILD / BUNDLE | HYPOTHESIS | define micro-pilot |
-| 09 | AI Output Validator | BUILD / BUNDLE | HYPOTHESIS | define micro-pilot |
+| 01 | Submission Preflight | BUILD | EXPERIMENTALLY_SUPPORTED (implementation) | real submission benchmark |
+| 02 | Invoice Mismatch Scanner | BUILD / BUNDLE | EXPERIMENTALLY_SUPPORTED (implementation) | real invoice/order benchmark |
+| 03 | Data Repair Receipt | BUILD | EXPERIMENTALLY_SUPPORTED (implementation) | real dataset benchmark |
+| 04 | Web Action Receipt | BUILD / BUNDLE | HYPOTHESIS | micro-pilot design |
+| 05 | Agent Acceptance Test | BUILD | RESEARCH PROTOTYPE CANDIDATE | discriminating prototype |
+| 06 | Document Consistency Checker | BUILD | HYPOTHESIS | micro-pilot design |
+| 07 | Digital License Manager | BUILD / WHITE-LABEL | HYPOTHESIS | micro-pilot design |
+| 08 | Procurement Pack Builder | BUILD / BUNDLE | HYPOTHESIS | micro-pilot design |
+| 09 | AI Output Validator | BUILD / BUNDLE | HYPOTHESIS | micro-pilot design |
+
+## Commercial pilots
+
+### B — Travel eSIM Resale
+Candidate supplier: Airalo Partners
+Model: BUY / RESELL
+Status: CANDIDATE — onboarding and unit economics OPEN
+
+### C — Service Business OS
+Candidate platform: HighLevel
+Model: WHITE-LABEL / LICENSE
+Status: CANDIDATE — account economics and niche selection OPEN
 
 ## New portfolio objective
 
 Build a multi-product, multi-channel catalog.
 
-A product can be entirely built in-house, sourced for resale, licensed, white-labeled, or bundled.
+A product can be:
+- entirely built in-house
+- sourced for resale
+- licensed / white-labeled
+- bundled / composed
 
 The key metrics are:
 - demand
@@ -41,13 +57,13 @@ The key metrics are:
 - legal/contractual viability
 - resilience to any single platform
 
-## Immediate execution rule
+## Execution rule
 
-Do not return to broad market research as the default.
+Broad market research is no longer the default.
 
-Next:
-1. define the initial offers more concretely
-2. identify build vs source opportunities for each
-3. select at least three pilots from different source/channel classes
-4. ship the smallest sellable versions
-5. measure real distribution and payment evidence
+The next work is:
+1. validate the three built pilots on real datasets
+2. acquire commercial facts for the Airalo resale pilot
+3. choose one HighLevel vertical offer and validate its economics
+4. launch at least one real distribution surface
+5. record payment and repeat-use evidence
