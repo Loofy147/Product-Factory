@@ -1,51 +1,117 @@
-# Submission Preflight — v0.1.0
+# Submission Preflight — v0.2.0
 
-**Status:** EXPERIMENTALLY_SUPPORTED (implementation only)
+**Status:** EXPERIMENTALLY_SUPPORTED (deterministic implementation only)
 
-A deterministic preflight engine for checking whether a submission evidence directory satisfies explicit requirements.
+## Product
 
-## Current scope
+A submission-readiness engine that answers:
+
+> "Can I submit this package without an obvious evidence/format failure?"
+
+It is not an RFP writer. The wedge is **final-mile verification**.
+
+## Current deterministic core
 
 Input:
 - requirements JSON
 - evidence directory
 
 Checks:
-- required file exists
-- optional evidence remains UNKNOWN when absent
-- expected file type matches
-- evidence path cannot escape the evidence directory
-- evidence is hashed into a SHA-256 manifest
+- required file existence
+- optional evidence -> UNKNOWN
+- expected file type
+- evidence path containment
+- SHA-256 evidence manifest
 
 Outputs:
-- PASS / FAIL / UNKNOWN summary
+- PASS / FAIL / UNKNOWN
 - per-requirement findings
 - evidence manifest
 
-Run:
+## Strengthening plan
 
-```bash
-PYTHONPATH=src python -m submission_preflight.cli requirements.json ./evidence --output report.json
-```
+### 1. Requirement rule packs
+Represent reusable requirements for:
+- tender
+- procurement
+- grant
+- vendor onboarding
+- compliance submission
+- application packages
 
-Exit code:
-- 0 = no blocking failures
-- 2 = one or more blocking failures
+Each rule pack is versioned.
 
-## Validation
+### 2. Evidence graph
+Model:
 
-- 5/5 local tests passed
+`requirement -> expected evidence -> observed artifact -> checks -> finding`
+
+This allows one document to satisfy several requirements while preserving provenance.
+
+### 3. Expiry and temporal checks
+Examples:
+- certificate age
+- license expiration
+- insurance validity
+- document issue window
+
+### 4. Cross-document consistency
+Detect conflicts in:
+- legal name
+- address
+- registration number
+- amounts
+- dates
+- signatory identity
+
+### 5. Submission manifest
+Generate:
+- exact file list
+- requirement coverage
+- blocker list
+- UNKNOWN list
+- artifact digests
+- rule-pack version
+
+### 6. Signed/reportable output
+Future report should be exportable as:
+- human PDF/HTML
+- machine JSON
+- immutable evidence manifest
+
+### 7. Multi-channel packaging
+
+Potential:
+- direct upload utility
+- web app
+- browser extension
+- consultant/agency package
+- API
+- white-label
+- marketplace integration
+
+## Moat hypothesis
+
+The defensibility is not the LLM.
+
+Potential moat:
+- versioned rule packs
+- benchmark corpus
+- evidence provenance
+- deterministic verification layer
+- reusable submission history
+- domain-specific failure knowledge
+
+## Current validation
+
+- 5/5 local unit tests passed
 - CLI smoke test passed
-- GitHub Actions explicitly installs pytest before running the suite
-- commercial value remains OPEN
+- CI failure found and corrected at dependency-install layer
+- commercial value: OPEN
+- real-world accuracy benchmark: OPEN
 
-## Deliberate boundary
+## Kill test
 
-v0.1 does not infer semantic compliance. It never converts uncertainty into PASS.
+Use real submission packages.
 
-Next experimental layers:
-1. deterministic metadata checks
-2. dates / expiry
-3. naming / size constraints
-4. semantic evidence checks with explicit UNKNOWN handling
-5. real document/PDF fixtures
+Continue only if the engine materially reduces final-preflight effort while preserving conservative UNKNOWN handling and producing actionable findings.
