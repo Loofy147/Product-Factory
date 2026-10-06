@@ -36,6 +36,7 @@ Exit code:
 
 - 5/5 local tests passed
 - CLI smoke test passed
+- GitHub Actions explicitly installs pytest before running the suite
 - commercial value remains OPEN
 
 ## Deliberate boundary
