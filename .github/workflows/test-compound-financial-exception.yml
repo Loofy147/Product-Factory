@@ -1,0 +1,35 @@
+name: compound-financial-exception-desk
+
+on:
+  push:
+    paths:
+      - "portfolio/21-financial-exception-desk/**"
+      - "portfolio/02-invoice-mismatch-scanner/**"
+      - "portfolio/03-data-repair-receipt/**"
+      - "products/derivatives/operations-grid/**"
+      - ".github/workflows/test-compound-financial-exception.yml"
+  pull_request:
+    paths:
+      - "portfolio/21-financial-exception-desk/**"
+      - "portfolio/02-invoice-mismatch-scanner/**"
+      - "portfolio/03-data-repair-receipt/**"
+      - "products/derivatives/operations-grid/**"
+      - ".github/workflows/test-compound-financial-exception.yml"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Install component packages and compound
+        run: |
+          python -m pip install -e ./portfolio/02-invoice-mismatch-scanner
+          python -m pip install -e ./portfolio/03-data-repair-receipt
+          python -m pip install -e ./portfolio/21-financial-exception-desk
+      - name: Run compound tests
+        env:
+          PYTHONPATH: ${{ github.workspace }}/products/derivatives/operations-grid
+        run: pytest portfolio/21-financial-exception-desk/tests -q
