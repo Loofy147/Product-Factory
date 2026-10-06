@@ -12,7 +12,7 @@ Status: ACTIVE
 ## D-002 — Product ownership over pure resale
 Decision: prefer products we own and can license/entitle, while keeping authorized resale as a secondary model.
 
-Status: ACTIVE
+Status: SUPERSEDED BY D-006
 
 ## D-003 — Channel independence
 Decision: Binance is one possible distribution channel, not the product thesis.
@@ -26,5 +26,16 @@ Status: ACTIVE
 
 ## D-005 — Evidence-first decisions
 Decision: preserve negative results, killed work, assumptions, and unresolved gaps; do not upgrade a claim because it was repeated.
+
+Status: ACTIVE
+
+## D-006 — Mixed product-source portfolio
+**Date:** 2026-10-06
+
+Decision: the portfolio may contain BUILD, BUY/RESELL, WHITE-LABEL/LICENSING, and BUNDLE/COMPOSE products.
+
+The source of a product is not the objective. The objective is a profitable, supportable, legally sellable offer with multiple viable distribution paths.
+
+Resale is acceptable when legitimate commercial rights, supplier traceability, channel compatibility, and economics are established.
 
 Status: ACTIVE
