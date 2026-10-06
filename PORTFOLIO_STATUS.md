@@ -30,6 +30,7 @@ Source models:
 13 SOP Drift Detector — HYPOTHESIS
 14 Vendor Renewal Reconciler — HYPOTHESIS
 15 Accessibility Preflight — HYPOTHESIS
+21 Financial Exception Desk — EXPERIMENTALLY_SUPPORTED implementation / commercial value OPEN
 
 ## Open-source downstream products
 
