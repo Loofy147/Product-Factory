@@ -110,4 +110,4 @@ Current priority compounds:
 4. Research Decision Pack
 5. Agent Release Gate
 
-Compound status remains **INFERENCE** until end-to-end execution on real inputs is observed.
+Compound status remains **INFERENCE** for commercial value. Financial Exception Desk implementation is now **EXPERIMENTALLY_SUPPORTED** at the component-test level; real-world value remains OPEN.
