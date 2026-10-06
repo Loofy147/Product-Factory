@@ -117,3 +117,21 @@ Priority compounds:
 - Agent Release Gate
 
 No new shared platform is authorized merely to support these compounds.
+
+
+## Portfolio expansion — 2026-10-06
+
+21 Financial Exception Desk — EXPERIMENTALLY_SUPPORTED implementation / commercial value OPEN
+22 Operations App Packs — HYPOTHESIS
+23 Browser Action Gate — HYPOTHESIS
+24 Reliability Evidence Monitor — EXPERIMENTALLY_SUPPORTED overlay core / commercial value OPEN
+25 ERP Verification Pack — HYPOTHESIS
+
+Five additional OSS bases are pinned:
+- Appsmith
+- Agent Browser
+- Gatus
+- Uptime Kuma
+- Lambda ERP
+
+The next selection criterion is opportunity coverage: buyer, channel, source model and measurable outcome, not technical novelty alone.
