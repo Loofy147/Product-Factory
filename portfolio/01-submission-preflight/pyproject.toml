@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "submission-preflight"
+version = "0.1.0"
+description = "Deterministic submission evidence preflight checker"
+requires-python = ">=3.11"
+
+[project.scripts]
+submission-preflight = "submission_preflight.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["src"]
