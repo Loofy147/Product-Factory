@@ -1,41 +1,15 @@
-# Invoice Mismatch Scanner
+# Invoice Mismatch Scanner — v0.1.0
 
-**Portfolio status:** HYPOTHESIS  
-**Investment stage:** Micro-pilot  
-**Decision:** OPEN
+Deterministically compares order records with invoice records and produces actionable mismatch reasons.
 
-## Product thesis
+Current checks:
+- missing invoice
+- duplicate invoice identifier
+- order ID mismatch
+- amount mismatch
+- currency mismatch
 
-_To be written before implementation._
+The product deliberately reports explicit failure reasons rather than using an LLM to guess whether two financial records are equivalent.
 
-## Buyer
-
-Who has the pain and who pays?
-
-## Pain
-
-What costly or repeated failure are we targeting?
-
-## Minimal input
-
-What is the smallest real artifact/event the pilot accepts?
-
-## Valuable output
-
-What concrete artifact/state change does the user receive?
-
-## Distribution
-
-First intended acquisition channel:
-
-## Payment
-
-Initial buying unit:
-
-## Kill test
-
-What evidence will make us stop?
-
-## Evidence
-
-No validated evidence recorded yet.
+Validation:
+- local test suite: 5/5 passed
